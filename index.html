@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #007acc;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+            color: #222;
+            font-weight: 700;
+        }
+
+        header h2 {
+            margin: 5px 0 0;
+            font-size: 18px;
+            font-weight: 500;
+            color: #555;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #007acc;
+        }
+
+        .section {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .left {
+            width: 35%;
+            padding-right: 20px;
+            border-right: 2px solid #ddd;
+        }
+
+        .right {
+            width: 65%;
+            padding-left: 20px;
+        }
+
+        .profile {
+            margin-bottom: 20px;
+            background: #e6f7ff;
+            padding: 15px;
+            border-left: 4px solid #007acc;
+        }
+
+        .profile h3 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: #007acc;
+            font-weight: 700;
+        }
+
+        .profile p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        h3 {
+            margin-bottom: 15px;
+            font-size: 20px;
+            color: #007acc;
+            font-weight: 700;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .sub-section {
+            margin-bottom: 20px;
+        }
+
+        .sub-section h4 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 700;
+            color: #444;
+        }
+
+        .sub-section p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .timeline {
+            position: relative;
+            margin-left: 20px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -10px;
+            height: 100%;
+            width: 2px;
+            background: #007acc;
+        }
+
+        .timeline-entry {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .timeline-entry::before {
+            content: '';
+            position: absolute;
+            left: -14px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            background: #007acc;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>Shreyas G</h1>
+                <h2>Aspiring Software Engineer</h2>
+            </div>
+            <div>
+                <img src="image.png" alt="Profile Picture" class="profile-pic">
+            </div>
+        </header>
+
+        <div class="profile">
+            <h3>Career Objective</h3>
+            <p>An aspiring software engineer who loves challenges and looks forward to learning more. Passionate about putting theory into practice, working with various people, and bringing unique ideas to life through software.</p>
+        </div>
+
+        <div class="section">
+            <div class="left">
+                <h3>Personal Information</h3>
+                <ul>
+                    <li>Sri Lakshmi Narayana Nilaya, Geddalahalli main road, Tumkur, 572105</li>
+                    <li>Shreyas17march@gmail.com</li>
+                    <li>91+ 9380933697</li>
+                    <li><a href="https://www.linkedin.com/in/shreyas-g-663a9a267">LinkedIn Profile</a></li>
+                    <li><a href="https://github.com/Shrey17g">GitHub URL</a></li>
+                </ul>
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Programming Languages: C, Java</li>
+                    <li>Tools: Git, MySQL</li>
+                    <li>Operating Systems: Windows, Linux (Ubuntu)</li>
+                    <li>Applications: Microsoft Office, Visual Studio, IntelliJ IDEA, Figma</li>
+                </ul>
+                <h3>Languages</h3>
+                <ul>
+                    <li>English</li>
+                    <li>Kannada</li>
+                    <li>Hindi</li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <h3>Education</h3>
+                <div class="timeline">
+                    <div class="timeline-entry">
+                        <h4>B.E. in Computer Science and Engineering</h4>
+                        <p>Malnad College of Engineering, Hassan (9.26 CGPA) - 2026</p>
+                    </div>
+                    <div class="timeline-entry">
+                        <h4>12th Grade</h4>
+                        <p>Vidyaniketan PU College, Tumkur (89.5%) - 2022</p>
+                    </div>
+                    <div class="timeline-entry">
+                        <h4>10th Grade</h4>
+                        <p>Bishop Sargant School, Tumkur (90.4%) - 2020</p>
+                    </div>
+                </div>
+
+                <h3>Certifications</h3>
+                <ul>
+                    <li>C for Beginners - Great Learning Academy (2023)</li>
+                    <li>Soft Skill Development - NPTEL (2024)</li>
+                </ul>
+
+                <h3>Projects</h3>
+                <ul>
+                    <li>Funneling Instrument (2023): Developed a device to minimize jagged edges in polyethylene packets, reducing plastic waste.</li>
+                    <li>Bank Management System (2024): Designed a C-based system to manage customer data and transactions using a singly linked list.</li>
+                </ul>
+
+                <h3>Achievements</h3>
+                <ul>
+                    <li>High CGPA: Maintained 9.26 throughout consecutive semesters.</li>
+                    <li>Innovation Award: Recognized for designing an innovative funneling instrument.</li>
+                </ul>
+
+                <h3>Voluntary Activities</h3>
+                <ul>
+                    <li>Blood Donation: Participated in campaigns to support medical needs.</li>
+                    <li>Tree Planting: Contributed to environmental conservation efforts.</li>
+                </ul>
+
+                <h3>Extracurricular Activities</h3>
+                <ul>
+                    <li>Lead Developer: Managed the design and distribution of a CSE department newsletter.</li>
+                    <li>Figma Workshop: Enhanced UI/UX skills through interactive design sessions.</li>
+                    <li>NCC A Certificate: Demonstrated leadership and teamwork through NCC activities.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
